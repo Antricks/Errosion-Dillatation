@@ -209,7 +209,7 @@ void n4dill() {
     }
 }
 
-//4N-Öffnung
+//4N-Ã–ffnung
 void n4oeffn() {
 n4err();
      //temp->leinwand
@@ -227,7 +227,7 @@ n4dill();
         }
 }
 
-//4N-Schließung
+//4N-SchlieÃŸung
 void n4schl() {
 n4dill();
      //temp->leinwand
@@ -245,7 +245,7 @@ n4err();
         }
 }
 
-//4N-Säuberung
+//4N-SÃ¤uberung
 void n4saeub() {
 n4schl();
 n4oeffn();
@@ -396,7 +396,7 @@ void n8dill() {
     }
 }
 
-//8N-Öffnung(dill&err -> temp)
+//8N-Ã–ffnung(dill&err -> temp)
 void n8oeffn() {
     n8err();
          //temp->leinwand
@@ -414,7 +414,7 @@ void n8oeffn() {
         }
 }
 
-//8N-Schließung(dill&err -> temp)
+//8N-SchlieÃŸung(dill&err -> temp)
 void n8schl() {
     n8dill();
          //temp->leinwand
@@ -432,7 +432,7 @@ void n8schl() {
         }
 }
 
-//8N-Säuberung
+//8N-SÃ¤uberung
 void n8saeub() {
     n8schl();
     n8oeffn();
@@ -531,7 +531,7 @@ void inver() {
     }
 }
 
-//Überprüfen- z<0 ? || z>0 ?
+//ÃœberprÃ¼fen- z<0 ? || z>0 ?
 bool mengewand() {
     int menge0 = 0;
     int mengez = 0;
