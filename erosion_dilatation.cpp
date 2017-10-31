@@ -169,7 +169,7 @@ void n4err() {
     }
 }
 
-//4N-Dillatation(Matrix) -> temp
+//4N-Dilatation(Matrix) -> temp
 void n4dill() {
     for(short x = 0; x < grs; x++){
         for(short y = 0; y < grs; y++){
@@ -252,7 +252,7 @@ n4oeffn();
 }
 
 
-//8N-Errosion(Matrix)
+//8N-Erosion(Matrix) -> temp
 void n8err() {
     for(short x = 0; x < grs; x++){
         for(short y = 0; y < grs; y++){
@@ -324,7 +324,7 @@ void n8err() {
     }
 }
 
-//8N-Dillatation(Matrix)
+//8N-Dillatation(Matrix) -> temp
 void n8dill() {
     for(short x = 0; x < grs; x++){
         for(short y = 0; y < grs; y++){
@@ -450,18 +450,6 @@ void n4kanten() {
                 }
             }
         }
-        /*for(short a = 0; a < grs; a++) {
-            for(short b = 0; b < grs; b++) {
-                cout<<ktemp[a][b];
-            } cout<<endl;
-        } cout<<"ktemp\n";
-
-        for(short a = 0; a < grs; a++) {
-            for(short b = 0; b < grs; b++) {
-                cout<<temp[a][b];
-            } cout<<endl;
-        } cout<<"temp\n";
-        */
         //Lade ktemp -> leinwand
         for(short x = 0; x < grs; x++) {
             for(short y = 0; y < grs; y++) {
@@ -475,7 +463,7 @@ void n4kanten() {
                 temp[a][b] = 0;
             }
         }
-
+        //Was auch immer ich mir dabei gedacht habe...
 }
 
 //8N-Kantenfindung -> ktemp -> leinwand
@@ -490,18 +478,6 @@ void n8kanten() {
                 }
             }
         }
-        /*for(short a = 0; a < grs; a++) {
-            for(short b = 0; b < grs; b++) {
-                cout<<ktemp[a][b];
-            } cout<<endl;
-        } cout<<"ktemp\n";
-
-        for(short a = 0; a < grs; a++) {
-            for(short b = 0; b < grs; b++) {
-                cout<<temp[a][b];
-            } cout<<endl;
-        } cout<<"temp\n";
-        */
         //Lade ktemp -> leinwand
         for(short x = 0; x < grs; x++) {
             for(short y = 0; y < grs; y++) {
@@ -518,7 +494,7 @@ void n8kanten() {
 
 }
 
-//Invertieren
+//Invertieren -> temp
 void inver() {
     for(short x = 0; x < grs; x++) {
         for(short y = 0; y < grs; y++) {
@@ -655,6 +631,7 @@ int main() {
     }
 
     system("cls");
-
+    
     }
+    return 0;
 }
