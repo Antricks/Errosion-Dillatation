@@ -584,7 +584,7 @@ bool aktion() {
             default:cout<<"Das ist Ungueltig. Es wurde automatisch N4 gewaehlt.";n4saeub();Sleep(1500);break;
         }
     } else if(aktionIn == 7) {
-        system("lgdinseldingdong.exe");
+        system("erosion_dilatation.exe");
     } else if(aktionIn == 8) {
         return true;
     } else {
